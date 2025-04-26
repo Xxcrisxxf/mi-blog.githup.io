@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4A00E0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav button {
+            background: #4A00E0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        nav button:hover {
+            background: #8E2DE2;
+        }
+
+        .content {
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-align: justify;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Mi Blog Personal</h1>
+    <nav>
+        <button onclick="showSection('about')">Sobre mí</button>
+        <button onclick="showSection('posts')">Mis Posts</button>
+        <button onclick="showSection('contact')">Contacto</button>
+    </nav>
+</header>
+
+<section id="about" class="content">
+    <h2>Sobre mí</h2>
+    <p>Hola, soy un apasionado de la tecnología, los video juegos y el anime. Me encanta compartir mis pensamientos y proyectos con el mundo. ¡Gracias por estar aquí!
+        Me gusta mucho jugar videojuegos; es una de las actividades que más disfruto en mi tiempo libre. Me permite desconectarme un poco del mundo, explorar nuevas historias, desafíos y mundos que siempre tienen algo diferente que ofrecer. Además, suelo escuchar música mientras camino o hago tareas, ya que me ayuda a concentrarme, relajarme y a veces hasta a hacer las cosas más rápido. La música se vuelve como una especie de acompañante silencioso que le da ritmo a lo que hago.
+
+También veo anime en mis ratos libres. Me gusta sumergirme en diferentes historias y estilos de animación. Los últimos animes que vi fueron Neon Genesis Evangelion, un clásico que mezcla acción, drama psicológico y ciencia ficción de una manera muy intensa; La Eminencia de las Sombras, que me atrapó con su mezcla de comedia y acción dentro de un mundo de fantasía oscura; y Devil May Cry, una adaptación que combina perfectamente la acción frenética y la esencia del famoso videojuego en el que se basa. Cada uno, a su manera, me dejó algo para recordar y me mantuvo bastante enganchado mientras los veía.
+
+
+    </p>
+</section>
+
+<section id="posts" class="content hidden">
+    <h2>Mis Últimos Posts</h2>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+        <div style="flex: 1; min-width: 250px; max-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <img src="juego.jpg" alt="Imagen 1" style="width: 100%; border-radius: 10px;">
+            <h3>Mi video juego favorito </h3>
+            <p>Warzone es uno de los videojuegos de disparos más populares gracias a su intensidad, realismo y mecánicas dinámicas. Al ser un battle royale gratuito basado en el universo de Call of Duty, ofrece una experiencia emocionante donde estrategia, reflejos y trabajo en equipo son esenciales para sobrevivir en mapas enormes y llenos de acción. Lo que lo hace tan bueno es su constante actualización de contenido, su gran variedad de armas y modos de juego, y la sensación de adrenalina que genera en cada partida, manteniendo a los jugadores siempre enganchados y queriendo mejorar..</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; max-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <img src="mc.png" alt="Imagen 2" style="width: 100%; border-radius: 10px;">
+            <h3>Mi cancion favorita</h3>
+            <p>"Como tú" de León Larregui habla de una conexión muy profunda y especial entre dos personas. No es solo amor en el sentido romántico tradicional, sino algo más espiritual y cósmico. León describe a esa persona como alguien única, como si fuera una creación especial del universo: alguien tan pura, brillante y diferente que parece venir de otro mundo..</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; max-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <a href="https://www.canva.com/design/DAGf2lLvm5c/ePGueqx7DCAhaGBQeV3K4g/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0" target="_blank">
+                <img src="mio.png" alt="Imagen 3" style="width: 100%; border-radius: 10px;">
+            </a>
+            <h3>Mi comic  </h3>
+            <p>La variabilidad lingüística se refiere a las diferencias que existen en el uso de una misma lengua entre distintos grupos de hablantes o en diferentes situaciones. Estas variaciones pueden darse por factores geográficos (como los dialectos), sociales (según la edad, clase social o nivel educativo), históricos (cambios en el tiempo) o contextuales (según el entorno o la formalidad de la conversación). La diversidad lingüística refleja la riqueza cultural de una sociedad y muestra cómo la lengua es un fenómeno dinámico y en constante evolución, adaptándose a las necesidades y realidades de quienes la utilizan.
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="content hidden">
+    <h2>Contacto</h2>
+    <p>¿Quieres ponerte en contacto conmigo? ¡Me encantaría saber de ti!</p>
+    <form onsubmit="alert('¡Gracias por tu mensaje!'); return false;">
+        <input type="text" placeholder="Tu nombre" required style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #ccc;">
+        <input type="email" placeholder="Tu correo" required style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 10px; border: 1px solid #ccc;">
+        <textarea placeholder="Tu mensaje" required style="width: 100%; height: 100px; padding: 10px; border-radius: 10px; border: 1px solid #ccc;"></textarea>
+        <button type="submit" style="background-color: #4A00E0; color: white; border: none; padding: 10px 20px; margin-top: 10px; border-radius: 20px; cursor: pointer;">Enviar</button>
+    </form>
+</section>
+
+<footer>
+</footer>
+
+<script>
+function showSection(sectionId) {
+    document.querySelectorAll('section.content').forEach(section => {
+        section.classList.add('hidden');
+    });
+    document.getElementById(sectionId).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
